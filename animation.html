@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(2, 2, 31);
+        }
+        
+        @keyframes animation {
+            0% {
+                box-shadow: 0px 0px 70px white;
+                width: 300px;
+                height: 300px;
+            }
+            50% {
+                box-shadow: 0px 0px 150px white;
+                width: 300px;
+                height: 300px;
+            }
+            100% {
+                box-shadow: 0px 0px 70px white;
+                width: 300px;
+                height: 300px;
+            }
+        }
+        
+        @keyframes s {
+            0% {
+                box-shadow: 0px 0px 70px white;
+                width: 1px;
+                height: 1px;
+            }
+            50% {
+                box-shadow: 0px 0px 150px white;
+                width: 3px;
+                height: 3px;
+            }
+            100% {
+                box-shadow: 0px 0px 70px white;
+                width: 1px;
+                height: 1px;
+            }
+        }
+        
+        @keyframes t {
+            0% {
+                box-shadow: 0px 0px 70px white;
+                width: 1px;
+                height: 1px;
+            }
+            50% {
+                box-shadow: 0px 0px 150px white;
+                width: 3px;
+                height: 3px;
+            }
+            100% {
+                box-shadow: 0px 0px 70px white;
+                width: 1px;
+                height: 1px;
+            }
+        }
+        
+        .moon {
+            position: absolute;
+            left: 600px;
+            top: 200px;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border-radius: 1000px;
+            animation: animation 5s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        *.star {
+            top: 100px;
+            background-color: white;
+            position: absolute;
+            left: 100px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .a-star {
+            top: 250px;
+            background-color: white;
+            position: absolute;
+            left: 200px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .b-star {
+            top: 400px;
+            background-color: white;
+            position: absolute;
+            left: 300px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .c-star {
+            top: 100px;
+            background-color: white;
+            position: absolute;
+            left: 800px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .d-star {
+            top: 50px;
+            background-color: white;
+            position: absolute;
+            left: 900px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .e-star {
+            top: 20px;
+            background-color: white;
+            position: absolute;
+            left: 100px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .f-star {
+            top: 500px;
+            background-color: white;
+            position: absolute;
+            left: 100px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .g-star {
+            top: 20px;
+            background-color: white;
+            position: absolute;
+            left: 1200px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .h-star {
+            top: 10px;
+            background-color: white;
+            position: absolute;
+            left: 850px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .i-star {
+            top: 30px;
+            background-color: white;
+            position: absolute;
+            left: 1000px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .j-star {
+            top: 300px;
+            background-color: white;
+            position: absolute;
+            left: 50px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .k-star {
+            top: 50px;
+            background-color: white;
+            position: absolute;
+            left: 600px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .l-star {
+            top: 50px;
+            background-color: white;
+            position: absolute;
+            left: 400px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .m-star {
+            top: 80px;
+            background-color: white;
+            position: absolute;
+            left: 300px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .n-star {
+            top: 100px;
+            background-color: white;
+            position: absolute;
+            left: 100px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .o-star {
+            top: 600;
+            background-color: white;
+            position: absolute;
+            left: 1000px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .p-star {
+            top: 50px;
+            background-color: white;
+            position: absolute;
+            left: 50px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .q-star {
+            top: 450px;
+            background-color: white;
+            position: absolute;
+            left: 300px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .r-star {
+            top: 500px;
+            background-color: white;
+            position: absolute;
+            left: 1100px;
+            animation: s 3s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+        
+        .s-star {
+            top: 300px;
+            background-color: white;
+            position: absolute;
+            left: 1200px;
+            animation: t 2s ease-in-out infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="moon"></div>
+    <div class="star"></div>
+    <div class="a-star"></div>
+    <div class="b-star"></div>
+    <div class="c-star"></div>
+    <div class="d-star"></div>
+    <div class="e-star"></div>
+    <div class="f-star"></div>
+    <div class="g-star"></div>
+    <div class="h-star"></div>
+    <div class="i-star"></div>
+    <div class="j-star"></div>
+    <div class="k-star"></div>
+    <div class="l-star"></div>
+    <div class="m-star"></div>
+    <div class="n-star"></div>
+    <div class="o-star"></div>
+    <div class="p-star"></div>
+    <div class="q-star"></div>
+    <div class="r-star"></div>
+    <div class="s-star"></div>
+</body>
+
+</html>
