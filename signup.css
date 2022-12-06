@@ -1,0 +1,53 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    background-color: #1661ab;
+    
+}
+
+form{
+    background-color: aquamarine;
+    width: 400px;
+    height: 500px;
+    margin-right: 100px;
+    text-align: left;
+    margin-top: 30px;
+    border: 20px solid rgba(red, green, blue, 100);
+    border-radius: 40px;
+    box-shadow: 5px 15px 20px rgb(101, 101, 101);
+}
+
+table{
+    /* border: 2px solid black; */
+    margin-top: -15px;
+}
+.hint{
+    height: 40px;
+    width: 80px;
+}
+.input{
+    height: 40px;
+    width: 200px;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.btn{   
+    border-radius: 30px;
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+    background-color: #1661ab;
+}
+
+
+.btn:hover{
+    background-color: aquamarine;
+}
+
+.btn:active{
+    background-color: #1661ab;
+}
