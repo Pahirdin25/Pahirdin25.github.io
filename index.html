@@ -4,6 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <title>www.aebd.love</title>
+    
+    <!-- 公告 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>每日公告</title>
+		<link rel="stylesheet" href="css/tc.css" />
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- 公告结束 -->
+    
     <link rel="icon" href="img/icon.ico">
     <style type="text/css">
         
@@ -106,6 +115,105 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 
         </div>
     </div>
+    
+    <!-- 公告 -->
+    		<div class="layer"></div>
+		<div id="globalAd">
+			<div id='hero-img' style="background: linear-gradient(to left, #3ea5ff 0, #ca7645 100%);">
+			</div>
+			<div id='profile-img'>
+				<img src="https://q.qlogo.cn/g?b=qq&nk=578955728&s=160" />
+			</div>
+			<div id='content'>
+				<p style="font-size: 16px;font-weight: bold;">公告</p>
+				<p>爱而不得提示你</p>
+				<p>使用cookie记录</p>
+				<p>一天只会弹一次</p>
+				<p><img src="https://api.lewz.cn/api/ipqm" alt="我的博客" style="width: 100%;"></p>
+				<a onclick="closeGlobalAd();" class="btn btn-default" rel='nofollow'>朕已阅</a>
+				<a href="http://aebd.love" onclick="redirectUrlToActive();" class="btn btn-default" rel='nofollow'>我的博客</a>
+			</div>
+		</div>
+
+		<script>
+			jQuery.cookie = function(name, value, options) {
+				if(typeof value != 'undefined') {
+					options = options || {};
+					if(value === null) {
+						value = '';
+						options.expires = -1;
+					}
+					var expires = '';
+					if(options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+						var date;
+						if(typeof options.expires == 'number') {
+							date = new Date();
+							var totalTime = 24 * 3600;
+							var hour = date.getHours();
+							var minutes = date.getMinutes();
+							var seconds = date.getSeconds();
+							var pastTime = 3600 * hour + 60 * minutes + seconds;
+							var leftTime = totalTime - pastTime;
+							date.setTime(date.getTime() + (options.expires * leftTime * 1000));
+						} else {
+							date = options.expires;
+						}
+						expires = '; expires=' + date.toUTCString();
+					}
+					var path = options.path ? '; path=' + (options.path) : '';
+					var domain = options.domain ? '; domain=' + (options.domain) : '';
+					var secure = options.secure ? '; secure' : '';
+					document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+				} else {
+					var cookieValue = null;
+					if(document.cookie && document.cookie != '') {
+						var cookies = document.cookie.split(';');
+						for(var i = 0; i < cookies.length; i++) {
+							var cookie = jQuery.trim(cookies[i]);
+							if(cookie.substring(0, name.length + 1) == (name + '=')) {
+								cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+								break;
+							}
+						}
+					}
+					return cookieValue;
+				}
+			};
+			$(function() {
+				var COOKIE_NAME = "erdangjiade";
+				if($.cookie(COOKIE_NAME)) {
+					$(".layer").hide();
+					$("#globalAd").hide();
+				} else {
+					var erdangjiadeH = $(window).height();
+					var erdangjiadeW = $(window).width();
+					$(".layer").show();
+					$("#globalAd").css({
+						'top': erdangjiadeH / 2 - $("#globalAd").height() / 2,
+						'left': erdangjiadeW / 2 - $("#globalAd").width() / 2
+					});
+					$("#globalAd").slideDown(300, function() {
+						setTimeout("closeGloableAd()", '300000');
+					});
+					$.cookie(COOKIE_NAME, "erdangjiade", {
+						path: '/',
+						expires: 1
+					});
+				}
+			});
+
+			function closeGlobalAd() {
+				$('#globalAd').hide();
+				$('.layer').hide();
+
+			}
+
+			function redirectUrlToActive() {
+				$('#globalAd').hide();
+				$('.layer').hide();
+			}
+		</script>
+    <!-- 公告结束 -->
 </body>
 
 </html>
