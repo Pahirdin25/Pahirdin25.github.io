@@ -3,15 +3,12 @@ a {
 	text-decoration: none!important
 }
 
-#top-grrk{
-	    background: url(https://www.pohaier.com/usr/plugins/AliceStyle/static/img/HorseRaceLamp.gif);
-	    height: 2px;
-	    top: 0px;
-	    position: fixed;
-	    width: 100%;
-	    Z-index: 10000;
+/* <style>
+.globalAd .el-drawer {
+  top: 60% !important;
 }
-
+</style>
+ */
 #globalAd {
 	top: 109.5px !important;
 	max-width: 400px;
