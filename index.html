@@ -1,247 +1,356 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <title>www.aebd.love</title>
-    
-    <!-- 公告 -->
+	<head>
+		<meta charset="utf-8" />
+		<title>www.aebd.love</title>
+
+		<!-- 公告 -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>每日公告</title>
 		<link rel="stylesheet" href="css/tc.css" />
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <!-- 公告结束 -->
+		<!-- 公告结束 -->
 
-    <link rel="icon" href="img/icon.ico">
-    <style type="text/css">
-        
-        
-        body {
-            background-color: #0e102e;
-        }
-        
-        .box_border {
-            width: 800px;
-            height: 400px;
-            border: 2px solid #e474ff99;
-            box-shadow: 0px 0px 20px inset #ba27ddba, 0px 0px 20px #3442b2;
-            border-radius: 12px;
-            margin: 100px auto;
-            display: flex;
-        }
-        .text-muted{
-	    text-align: center;
-            color: white;
-	    font-size:12px;
-	}
-        .box_border .box_chile {
-            width: 300px;
-            height: 300px;
-            border: 2px solid #9a56b6d1;
-            margin: 49px auto;
-        }
-        
-        @keyframes animate {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-        
-        .box_border .box_chile .box_chile_one {
-            width: 250px;
-            height: 250px;
-            border: 1px solid #f3a793;
-            margin: 24px auto;
-            box-shadow: 0px 0px 30px #2c3397;
-        }
-        
-        h2 {
-            text-align: center;
-            color: white;
-            margin-top: 80px;
-        }
-        
-        @keyframes animation {
-            0% {
-                box-shadow: 0px 0px 20px white;
-                width: 50px;
-                height: 50px;
-            }
-            50% {
-                box-shadow: 0px 0px 33px white;
-                width: 50px;
-                height: 50px;
-            }
-            100% {
-                box-shadow: 0px 0px 50px white;
-                width: 50px;
-                height: 50px;
-            }
-        }
-        
-        .moon {
-            position: absolute;
-            left: 40px;
-            top: 40px;
-            width: 50px;
-            height: 50px;
-            background-color: white;
-            border-radius: 1000px;
-            animation: animation 5s ease-in-out infinite alternate;
-            animation-play-state: running;
-        }
-    </style>
-</head>
+		<link rel="icon" href="img/icon.ico">
+		<style type="text/css">
+			body {
+				background-color: #0e102e;
+			}
 
-<body>
-    
-    <a href="./animation.html">
-        <div class="moon"></div>
-    </a>
+			.box_border {
+				width: 800px;
+				height: 400px;
+				border: 2px solid #e474ff99;
+				box-shadow: 0px 0px 20px inset #ba27ddba, 0px 0px 20px #3442b2;
+				border-radius: 12px;
+				margin: 100px auto;
+				display: flex;
+			}
 
-	<div id="top-grrk"></div>
-	
-    <div class="box_border">
-        <div class="box_chile">
+			.text-muted {
+				text-align: center;
+				color: white;
+				font-size: 12px;
+			}
 
-            <a href="./HomePage.html">
-                <div class="box_chile_one">
-                    <h2>Welcome To My Website!</h2>
-			<!--博主介绍的闪字特效--> <span class="text-muted"><div id="chakhsu"></div> <script> var chakhsu = function (r) {function t() {return b[Math.floor(Math.random() * b.length)]} function e() {return String.fromCharCode(94 * Math.random() + 33)} function n(r) {for (var n = document.createDocumentFragment(), i = 0; r > i; i++) { var l = document.createElement("span"); l.textContent = e(), l.style.color = t(), n.appendChild(l) } return n}function i() {var t = o[c.skillI]; c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d) } /*以下内容自定义修改*/ var l = "", o = ["不挑战一下自己又怎么知道极限" ].map(function (r) {return r + ""}), a = 2, g = 1, s = 5, d = 75, b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"], c = {text: "", prefixP: -s, skillI: 0, skillP: 0, direction: "forward", delay: a, step: g}; i() }; chakhsu(document.getElementById('chakhsu')); </script> </span> </span></span>
-                    <p></p>
-                </div>
-            </a>
+			.box_border .box_chile {
+				width: 300px;
+				height: 300px;
+				border: 2px solid #9a56b6d1;
+				margin: 49px auto;
+			}
 
-        </div>
-		<!-- 公告 -->
-		    		<div class="layer"></div>
-				<div id="globalAd">
-					<div id='hero-img' style="background: linear-gradient(to left, #3ea5ff 0, #ca7645 100%);">
-					</div>
-					<div id='profile-img'>
-						<img src="https://q.qlogo.cn/g?b=qq&nk=578955728&s=160" />
-					</div>
-					<div id='content'>
-						<p style="font-size: 16px;font-weight: bold;">公告</p>
-						<p>爱而不得提示你</p>
-						<p>使用cookie记录</p>
-						<p>一天只会弹一次</p>
-						<p><img src="https://api.lewz.cn/api/ipqm" alt="我的博客" style="width: 100%;"></p>
-						<a onclick="closeGlobalAd();" class="btn btn-default" rel='nofollow'>朕已阅</a>
-						<a href="http://aebd.love" onclick="redirectUrlToActive();" class="btn btn-default" rel='nofollow'>我的博客</a>
-					</div>
-				</div>
-		
-				<script>
-					jQuery.cookie = function(name, value, options) {
-						if(typeof value != 'undefined') {
-							options = options || {};
-							if(value === null) {
-								value = '';
-								options.expires = -1;
-							}
-							var expires = '';
-							if(options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
-								var date;
-								if(typeof options.expires == 'number') {
-									date = new Date();
-									var totalTime = 24 * 3600;
-									var hour = date.getHours();
-									var minutes = date.getMinutes();
-									var seconds = date.getSeconds();
-									var pastTime = 3600 * hour + 60 * minutes + seconds;
-									var leftTime = totalTime - pastTime;
-									date.setTime(date.getTime() + (options.expires * leftTime * 1000));
-								} else {
-									date = options.expires;
-								}
-								expires = '; expires=' + date.toUTCString();
-							}
-							var path = options.path ? '; path=' + (options.path) : '';
-							var domain = options.domain ? '; domain=' + (options.domain) : '';
-							var secure = options.secure ? '; secure' : '';
-							document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
-						} else {
-							var cookieValue = null;
-							if(document.cookie && document.cookie != '') {
-								var cookies = document.cookie.split(';');
-								for(var i = 0; i < cookies.length; i++) {
-									var cookie = jQuery.trim(cookies[i]);
-									if(cookie.substring(0, name.length + 1) == (name + '=')) {
-										cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-										break;
+			@keyframes animate {
+				0% {
+					transform: rotate(0deg);
+				}
+
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+
+			.box_border .box_chile .box_chile_one {
+				width: 250px;
+				height: 250px;
+				border: 1px solid #f3a793;
+				margin: 24px auto;
+				box-shadow: 0px 0px 30px #2c3397;
+			}
+
+			h2 {
+				text-align: center;
+				color: white;
+				margin-top: 80px;
+			}
+
+			@keyframes animation {
+				0% {
+					box-shadow: 0px 0px 20px white;
+					width: 50px;
+					height: 50px;
+				}
+
+				50% {
+					box-shadow: 0px 0px 33px white;
+					width: 50px;
+					height: 50px;
+				}
+
+				100% {
+					box-shadow: 0px 0px 50px white;
+					width: 50px;
+					height: 50px;
+				}
+			}
+
+			.moon {
+				position: absolute;
+				left: 40px;
+				top: 40px;
+				width: 50px;
+				height: 50px;
+				background-color: white;
+				border-radius: 1000px;
+				animation: animation 5s ease-in-out infinite alternate;
+				animation-play-state: running;
+			}
+
+			.button-box {
+				position: absolute;
+				width: 100%;
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;
+			}
+
+			.list {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 15px;
+				padding-right: 15px;
+				margin-left: 5px;
+				margin-right: 5px;
+				margin-bottom: 20px;
+				border-radius: 10px;
+				background-color: rgb(54, 54, 54, 20%);
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<a href="./animation.html">
+			<div class="moon"></div>
+		</a>
+
+		<div id="top-grrk"></div>
+
+		<div class="box_border">
+			<div class="box_chile">
+
+				<a href="./HomePage.html">
+					<div class="box_chile_one">
+						<h2>Welcome To My Website!</h2>
+						<!--博主介绍的闪字特效--> <span class="text-muted">
+							<div id="chakhsu"></div>
+							<script>
+								var chakhsu = function(r) {
+									function t() {
+										return b[Math.floor(Math.random() * b.length)]
 									}
+
+									function e() {
+										return String.fromCharCode(94 * Math.random() + 33)
+									}
+
+									function n(r) {
+										for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+											var l = document.createElement("span");
+											l.textContent = e(), l.style.color = t(), n.appendChild(l)
+										}
+										return n
+									}
+
+									function i() {
+										var t = o[c.skillI];
+										c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]),
+												c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP],
+												c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP >
+											0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c
+												.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ?
+											Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+									} /*以下内容自定义修改*/
+									var l = "",
+										o = ["不挑战一下自己又怎么知道极限"].map(function(r) {
+											return r + ""
+										}),
+										a = 2,
+										g = 1,
+										s = 5,
+										d = 75,
+										b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)",
+											"rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)",
+											"rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)",
+											"rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"
+										],
+										c = {
+											text: "",
+											prefixP: -s,
+											skillI: 0,
+											skillP: 0,
+											direction: "forward",
+											delay: a,
+											step: g
+										};
+									i()
+								};
+								chakhsu(document.getElementById('chakhsu'));
+							</script>
+						</span> </span></span>
+						<p></p>
+					</div>
+				</a>
+
+			</div>
+			<!-- 公告 -->
+			<div class="layer"></div>
+			<div id="globalAd">
+				<div id='hero-img' style="background: linear-gradient(to left, #3ea5ff 0, #ca7645 100%);">
+				</div>
+				<div id='profile-img'>
+					<img src="https://q.qlogo.cn/g?b=qq&nk=578955728&s=160" />
+				</div>
+				<div id='content'>
+					<p style="font-size: 16px;font-weight: bold;">公告</p>
+					<p>爱而不得提示你</p>
+					<p>使用cookie记录</p>
+					<p>一天只会弹一次</p>
+					<p><img src="https://api.lewz.cn/api/ipqm" alt="我的博客" style="width: 100%;"></p>
+					<a onclick="closeGlobalAd();" class="btn btn-default" rel='nofollow'>朕已阅</a>
+					<a href="http://aebd.love" onclick="redirectUrlToActive();" class="btn btn-default"
+						rel='nofollow'>我的博客</a>
+				</div>
+			</div>
+
+			<script>
+				jQuery.cookie = function(name, value, options) {
+					if (typeof value != 'undefined') {
+						options = options || {};
+						if (value === null) {
+							value = '';
+							options.expires = -1;
+						}
+						var expires = '';
+						if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+							var date;
+							if (typeof options.expires == 'number') {
+								date = new Date();
+								var totalTime = 24 * 3600;
+								var hour = date.getHours();
+								var minutes = date.getMinutes();
+								var seconds = date.getSeconds();
+								var pastTime = 3600 * hour + 60 * minutes + seconds;
+								var leftTime = totalTime - pastTime;
+								date.setTime(date.getTime() + (options.expires * leftTime * 1000));
+							} else {
+								date = options.expires;
+							}
+							expires = '; expires=' + date.toUTCString();
+						}
+						var path = options.path ? '; path=' + (options.path) : '';
+						var domain = options.domain ? '; domain=' + (options.domain) : '';
+						var secure = options.secure ? '; secure' : '';
+						document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+					} else {
+						var cookieValue = null;
+						if (document.cookie && document.cookie != '') {
+							var cookies = document.cookie.split(';');
+							for (var i = 0; i < cookies.length; i++) {
+								var cookie = jQuery.trim(cookies[i]);
+								if (cookie.substring(0, name.length + 1) == (name + '=')) {
+									cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+									break;
 								}
 							}
-							return cookieValue;
 						}
-					};
-					$(function() {
-						var COOKIE_NAME = "erdangjiade";
-						if($.cookie(COOKIE_NAME)) {
-							$(".layer").hide();
-							$("#globalAd").hide();
-						} else {
-							var erdangjiadeH = $(window).height();
-							var erdangjiadeW = $(window).width();
-							$(".layer").show();
-							$("#globalAd").css({
-								'top': erdangjiadeH / 2 - $("#globalAd").height() / 2,
-								'left': erdangjiadeW / 2 - $("#globalAd").width() / 2
-							});
-							$("#globalAd").slideDown(300, function() {
-								setTimeout("closeGloableAd()", '300000');
-							});
-							$.cookie(COOKIE_NAME, "erdangjiade", {
-								path: '/',
-								expires: 1
-							});
-						}
-					});
-		
-					function closeGlobalAd() {
-						$('#globalAd').hide();
-						$('.layer').hide();
-		
+						return cookieValue;
 					}
-		
-					function redirectUrlToActive() {
-						$('#globalAd').hide();
-						$('.layer').hide();
+				};
+				$(function() {
+					var COOKIE_NAME = "erdangjiade";
+					if ($.cookie(COOKIE_NAME)) {
+						$(".layer").hide();
+						$("#globalAd").hide();
+					} else {
+						var erdangjiadeH = $(window).height();
+						var erdangjiadeW = $(window).width();
+						$(".layer").show();
+						$("#globalAd").css({
+							'top': erdangjiadeH / 2 - $("#globalAd").height() / 2,
+							'left': erdangjiadeW / 2 - $("#globalAd").width() / 2
+						});
+						$("#globalAd").slideDown(300, function() {
+							setTimeout("closeGloableAd()", '300000');
+						});
+						$.cookie(COOKIE_NAME, "erdangjiade", {
+							path: '/',
+							expires: 1
+						});
 					}
-				</script>
-		    <!-- 公告结束 -->
-		
-    </div>
-<!--   下雪背景   -->
-	<script type="text/javascript" src="https://www.pohaier.com/usr/plugins/AliceStyle/static/js/bg/b2.js"></script>				<script>
-				let leftHeader=document.querySelectorAll("span.nav-icon>svg,span.nav-icon>i");let leftHeaderColorArr=["#86d2f3","#a3dbf3","#5dbde7","#6b7ceb","#919ff5","#abb6f5"];leftHeader.forEach(tag=>{tagsColor=leftHeaderColorArr[Math.floor(Math.random()*leftHeaderColorArr.length)];tag.style.color=tagsColor});	
-				</script>				<script>
-				  
-				      let tags = document.querySelectorAll("#tag_cloud-2 a,.list-group-item .pull-right");
-				      
-                      let colorArr = ["#86d2f3", "#a3dbf3", "#5dbde7", "#6b7ceb", "#919ff5", "#abb6f5"];
-                      
-                      tags.forEach(tag =>{
-                          tagsColor = colorArr[Math.floor(Math.random() * colorArr.length)];
-                          tag.style.backgroundColor = tagsColor
-                      });
-                      
-				</script><div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -900px;"></div><script type="text/javascript" src="https://www.pohaier.com/usr/plugins/AliceStyle/static/js/app/szgotop.js"></script><script>				$("body").css("cursor", "url('https://www.pohaier.com/usr/plugins/AliceStyle/static/mouse/dew/normal.cur'), default");
-				$("a").css("cursor", "url('https://www.pohaier.com/usr/plugins/AliceStyle/static/mouse/dew/link.cur'), pointer");</script><script type="text/javascript" src="https://www.pohaier.com/usr/plugins/AliceStyle/static/js/app/as-tool.js"></script><script type="text/javascript" src="https://www.pohaier.com/usr/plugins/AliceStyle/static/js/app/as-style.js"></script><script>console.log("\n %c AliceStyle v3.4.0 Pro By 萌卜兔's | https://racns.com/374.html","color:#fff;background: linear-gradient(to right , #7A88FF, #9ba5ff);padding:5px;border-radius: 10px;");</script><script type="text/javascript">
-	(function(){
-		var pres = document.querySelectorAll('pre');
-		var lineNumberClassName = 'line-numbers';
-		pres.forEach(function (item, index) {
-			item.className = item.className == '' ? lineNumberClassName : item.className + ' ' + lineNumberClassName;
-		});
-	})();
-</script>
+				});
 
-</body>
+				function closeGlobalAd() {
+					$('#globalAd').hide();
+					$('.layer').hide();
+
+				}
+
+				function redirectUrlToActive() {
+					$('#globalAd').hide();
+					$('.layer').hide();
+				}
+			</script>
+			<!-- 公告结束 -->
+
+		</div>
+
+		<div class="button-box">
+			<a href="./animation.html">
+			<div class="list" data="reset">功德</div>
+			</a>
+		</div>
+
+		<!--   下雪背景   -->
+		<script type="text/javascript" src="https://www.pohaier.com/usr/plugins/AliceStyle/static/js/bg/b2.js"></script>
+		<script>
+			let leftHeader = document.querySelectorAll("span.nav-icon>svg,span.nav-icon>i");
+			let leftHeaderColorArr = ["#86d2f3", "#a3dbf3", "#5dbde7", "#6b7ceb", "#919ff5", "#abb6f5"];
+			leftHeader.forEach(tag => {
+				tagsColor = leftHeaderColorArr[Math.floor(Math.random() * leftHeaderColorArr.length)];
+				tag.style.color = tagsColor
+			});
+		</script>
+		<script>
+			let tags = document.querySelectorAll("#tag_cloud-2 a,.list-group-item .pull-right");
+
+			let colorArr = ["#86d2f3", "#a3dbf3", "#5dbde7", "#6b7ceb", "#919ff5", "#abb6f5"];
+
+			tags.forEach(tag => {
+				tagsColor = colorArr[Math.floor(Math.random() * colorArr.length)];
+				tag.style.backgroundColor = tagsColor
+			});
+		</script>
+		<div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -900px;"></div>
+		<script type="text/javascript" src="https://www.pohaier.com/usr/plugins/AliceStyle/static/js/app/szgotop.js">
+		</script>
+		<script>
+			$("body").css("cursor",
+				"url('https://www.pohaier.com/usr/plugins/AliceStyle/static/mouse/dew/normal.cur'), default");
+			$("a").css("cursor", "url('https://www.pohaier.com/usr/plugins/AliceStyle/static/mouse/dew/link.cur'), pointer");
+		</script>
+		<script type="text/javascript" src="https://www.pohaier.com/usr/plugins/AliceStyle/static/js/app/as-tool.js">
+		</script>
+		<script type="text/javascript" src="https://www.pohaier.com/usr/plugins/AliceStyle/static/js/app/as-style.js">
+		</script>
+		<script>
+			console.log("\n %c AliceStyle v3.4.0 Pro By 萌卜兔's | https://racns.com/374.html",
+				"color:#fff;background: linear-gradient(to right , #7A88FF, #9ba5ff);padding:5px;border-radius: 10px;");
+		</script>
+		<script type="text/javascript">
+			(function() {
+				var pres = document.querySelectorAll('pre');
+				var lineNumberClassName = 'line-numbers';
+				pres.forEach(function(item, index) {
+					item.className = item.className == '' ? lineNumberClassName : item.className + ' ' +
+						lineNumberClassName;
+				});
+			})();
+		</script>
+
+	</body>
 
 </html>
