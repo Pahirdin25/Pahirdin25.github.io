@@ -9,6 +9,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>每日公告</title>
+		<!-- 弹窗css -->
 		<link rel="stylesheet" href="css/tc.css" />
 		<link rel="stylesheet" href="css/css.css" />
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -66,7 +67,8 @@
 				color: white;
 				margin-top: 80px;
 			}
-
+			
+			/* 月亮动画 */
 			@keyframes animation {
 				0% {
 					box-shadow: 0px 0px 20px white;
@@ -86,7 +88,7 @@
 					height: 50px;
 				}
 			}
-
+			/* 月亮 */
 			.moon {
 				position: absolute;
 				left: 40px;
@@ -98,7 +100,7 @@
 				animation: animation 5s ease-in-out infinite alternate;
 				animation-play-state: running;
 			}
-
+			/* 底部按钮↓*/
 			.button-box {
 				position: absolute;
 				width: 99%;
@@ -123,7 +125,10 @@
 	</head>
 
 	<body>
+		<!-- 顶部彩条 -->
 		<div id="top-grrk"></div>
+		
+		<!-- 月亮 -->
 		<a href="./animation.html">
 			<div class="moon"></div>
 		</a>
@@ -193,8 +198,9 @@
 						<p></p>
 					</div>
 				</a>
-
 			</div>
+		</div>
+
 			<!-- 公告 -->
 			<div class="layer"></div>
 			<div id="globalAd">
@@ -293,10 +299,9 @@
 					$('.layer').hide();
 				}
 			</script>
-			<!-- 公告结束 -->
+		<!-- 公告结束 -->
 
-		</div>
-
+		<!-- 底部按钮 -->
 		<div class="button-box">
 			<a href="./GD.html">
 			<div class="list" data="reset">功德</div>
